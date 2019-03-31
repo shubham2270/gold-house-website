@@ -20,6 +20,17 @@ footer {
     h4 {
         @include heading;
         color: white;
+
+        
+        @include media($sm...) {
+            font-size: 1.4em;
+         }
+         @include media($md...) {
+            font-size: 1.4em;
+         }
+         @include media($lg...) {
+            font-size: 1.6em;
+         }
     }
 
     p {
@@ -29,6 +40,19 @@ footer {
         a {
             color: #fff6d6 ;
         }
+
+        @include media($xs-L...) {
+            font-size: 1em;
+         }
+        @include media($sm...) {
+            font-size: 1.1em;
+         }
+         @include media($md...) {
+            font-size: 1.2em;
+         }
+         @include media($lg...) {
+            font-size: 1.4em;
+         }
     }
 }
 
@@ -37,6 +61,19 @@ footer {
 
     img {
         width: 15%;
+
+        @include media($xs-L...) {
+            width: 10%;
+         }
+        @include media($sm...) {
+            width: 10%;
+         }
+         @include media($md...) {
+            width: 12%;
+         }
+         @include media($lg...) {
+            width: 6%;
+         }
     }
     margin-top: 1rem;
 }
@@ -61,4 +98,17 @@ footer {
     a {
         color: rgb(241, 241, 183);
     }
+
+    @include media($xs-L...) {
+        font-size: 0.8rem;
+     }
+    @include media($sm...) {
+        font-size: 0.9rem;
+     }
+     @include media($md...) {
+        font-size: 1rem;
+     }
+     @include media($lg...) {
+        font-size: 1.2rem;
+     }
 }

@@ -9,12 +9,52 @@
     h2 {
         @include heading
     }
+
+     @include media($sm...) {
+        grid-template-columns: 1fr 1fr 1fr;
+        h2 {
+            font-size: 1.4em;
+        }
+     }
+     @include media($md...) { 
+        grid-template-columns: 1fr 1fr 1fr;
+        h2 {
+            font-size: 1.4em;
+        }
+ 
+     }
+     @include media($lg...) {
+        grid-template-columns: 1fr  1fr 1fr;
+        h2 {
+            font-size: 1.6em;
+        }
+     }
 }
 
 .gallery-image {
-    width: 10em;
-    height: 10em;
+    width: 9.5em;
+    height: 9.5em;
     box-shadow: rgb(202, 202, 202) 2px 2px 2px;
+
+    @include media($xs-L...) {
+       width: 16em;
+       height: 14em; 
+    }
+    @include media($sm...) {
+        width: 12em;
+       height: 10em; 
+
+    }
+    @include media($md...) {
+        width: 15em;
+       height: 13em; 
+
+    }
+    @include media($lg...) {
+        width: 22em;
+       height: 20em; 
+
+    }
 
     
     img {

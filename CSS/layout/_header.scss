@@ -1,5 +1,18 @@
 .container {
     margin: 0;
+
+
+    @include media($sm...) {
+       @include container;
+    }
+    @include media($md...) {
+        @include container;
+       
+    }
+    @include media($lg...) {
+        @include container;
+       
+    }
 }
 
 .hero-image {
@@ -19,6 +32,22 @@
     img {
         margin-top: 4em;
         background-color: rgba(255, 255, 255, 0.555);
+
+        @include media($xs-L...) {
+            width: 12em;
+        }
+        @include media($sm...) {
+            width: 14em;
+           
+        }
+        @include media($md...) {
+            width: 16em;
+           
+        }
+        @include media($lg...) {
+            width: 18em;
+           
+        }
     }
 }
 
@@ -27,6 +56,20 @@
     margin-top: 2em;
     background-color: rgba(255, 255, 255, 0.555);
     padding: 0.5rem;
+
+    @include media($xs-L...) {
+        font-size: 1.3em;
+    }
+    @include media($sm...) {
+        font-size: 1.4em;
+    }
+    @include media($md...) {
+        font-size: 1.5em;
+    }
+    @include media($lg...) {
+        font-size: 1.6em;
+    }
+
 }
 
 .credit {

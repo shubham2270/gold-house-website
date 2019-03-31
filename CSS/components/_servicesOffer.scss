@@ -4,6 +4,16 @@
 
     h2 {
         @include heading;
+
+        @include media($sm...) {
+            font-size: 1.4em;
+         }
+         @include media($md...) {
+            font-size: 1.4em;
+         }
+         @include media($lg...) {
+            font-size: 1.6em;
+         }
     }
 }
 
@@ -17,5 +27,18 @@
         padding: 0.4rem;
         margin: 0.4rem;
         color: rgb(80, 54, 30);
+
+        @include media($xs-L...) {
+            font-size: 1em;
+         }
+        @include media($sm...) {
+            font-size: 1.1em;
+         }
+         @include media($md...) {
+            font-size: 1.2em;
+         }
+         @include media($lg...) {
+            font-size: 1.4em;
+         }
     }
 }

@@ -3,7 +3,17 @@
     margin-top: $margin-top;
 
     h2 {
-        @include heading
+        @include heading;
+
+         @include media($sm...) {
+            font-size: 1.4em;
+         }
+         @include media($md...) {
+            font-size: 1.4em;
+         }
+         @include media($lg...) {
+            font-size: 1.6em;
+         }
     }
 }
 
@@ -12,4 +22,17 @@
     grid-template-columns: 1fr 1fr;
     justify-items: center;
     grid-row-gap: 1rem;
+
+    @include media($xs-L...) {
+        grid-template-columns: repeat(4, 1fr);
+     }
+     @include media($sm...) {
+        grid-template-columns: repeat(4, 1fr);
+     }
+     @include media($md...) {
+        grid-template-columns: repeat(4, 1fr);
+     }
+     @include media($lg...) {
+        grid-template-columns: repeat(4, 1fr);
+     }
 }

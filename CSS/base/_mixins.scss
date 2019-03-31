@@ -3,3 +3,7 @@
     color: $secondary-color;
     padding: 0.6em;
 }
+
+@mixin container {
+    margin: 0 10%  0 10%;
+}
