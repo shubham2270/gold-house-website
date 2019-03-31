@@ -1,0 +1,12 @@
+$primary-font: sans-serif;
+$primary-color: #cc9b81;
+$secondary-color: #444444;
+$margin-top: 1.5rem;
+
+//Media query breakPoints
+$xs: '<=480px'; //Mobile
+$xs-L: '>481px','<=767px'; //Low Resolution tablet / landscape 
+$sm: '>768px', '<=1024px'; //tablet
+$sm-L: '>768px', '<=1024px', 'landscape'; //tablet - landscape
+$md: '>1025px', '<=1280px'; //laptop / desktop
+$lg: '>1280px'; // extra large screens

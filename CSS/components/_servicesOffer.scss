@@ -1,0 +1,21 @@
+.service-main-wrapper {
+    text-align: center;
+    margin-top: $margin-top;
+
+    h2 {
+        @include heading;
+    }
+}
+
+.service-sub-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    h4 {
+        font-size: 0.8rem;
+        border: $primary-color 2px dotted;
+        padding: 0.4rem;
+        margin: 0.4rem;
+        color: rgb(80, 54, 30);
+    }
+}

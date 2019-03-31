@@ -1,0 +1,69 @@
+.top_contact {
+    background-color: $primary-color;
+    width: 100%;
+    height: 2em;
+    display: flex;
+    color: white;
+    font-size: 1.1rem;
+    justify-content: space-around;
+    align-items: center;
+
+    a {
+        color: white;
+    }
+}
+
+
+nav {
+    background-color: #fff;
+    font-family: $primary-font;
+    height: 60px;
+    font-size: 1.2rem;
+
+    .container {
+        margin: 0;
+
+        ul {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 60px;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+
+            a {
+                color: #fff;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.nav-list {
+    box-sizing: content-box;
+    background-color: $secondary-color;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top:4.9em;
+    padding: 0em;
+    line-height: 4rem;
+    transition: 300ms ease-in;
+    z-index: 1;
+
+    li {
+        display: none;
+    }
+
+}
+
+.slideNav {
+    width: 0;
+    // transform: translateX(12em);
+    // display: none;
+}
+
+.nav img {
+    width: 70%;
+}
