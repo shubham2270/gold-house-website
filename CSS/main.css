@@ -63,6 +63,10 @@ noscript {
   margin-top: 1em;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .container {
   margin: 0;
 }
@@ -915,5 +919,92 @@ footer {
   .service-sub-wrapper h4 {
     font-size: 1.4em;
   }
+}
+
+.scrollTop {
+  width: 30px;
+  height: 30px;
+  background-color: #cc9b81;
+  border-radius: 3px;
+  color: #444444;
+  font-weight: bold;
+  font-size: 0.8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  z-index: 99;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+  display: none;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.432) 0px 0px 20px;
+          box-shadow: rgba(0, 0, 0, 0.432) 0px 0px 20px;
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .scrollTop {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+@media (min-width: 1026px) and (max-width: 1280px) {
+  .scrollTop {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (min-width: 1281px) {
+  .scrollTop {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.scrollTop:hover {
+  background-color: #bd8364;
+  color: white;
+}
+
+.stickySocial {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 2.8em;
+  height: 6em;
+  background-color: white;
+  border-radius: 3px;
+  position: fixed;
+  bottom: 18em;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.329) 0px 0px 30px;
+          box-shadow: rgba(0, 0, 0, 0.329) 0px 0px 30px;
+  -webkit-transform: translateX(-2.8em);
+          transform: translateX(-2.8em);
+  -webkit-transition: 300ms;
+  transition: 300ms;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.stickySocial img {
+  width: 2em;
 }
 /*# sourceMappingURL=main.css.map */

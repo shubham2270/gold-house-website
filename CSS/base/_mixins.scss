@@ -7,3 +7,8 @@
 @mixin container {
     margin: 0 10%  0 10%;
 }
+
+@mixin center {
+    justify-content: center;
+    align-items: center;
+}

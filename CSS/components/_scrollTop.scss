@@ -1,0 +1,38 @@
+.scrollTop {
+    width: 30px;
+    height: 30px;
+    background-color: $primary-color;
+    border-radius: 3px;
+    color: $secondary-color;
+    font-weight: bold;
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 99;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer; 
+    transition: 300ms;
+    display: none;
+    box-shadow: rgba(0, 0, 0, 0.432) 0px 0px 20px;
+
+    @include media($sm...) {
+        width: 35px;
+        height: 35px;
+     }
+     @include media($md...) {
+        width: 40px;
+        height: 40px;
+     }
+     @include media($lg...) {
+        width: 40px;
+        height: 40px;
+     }
+}
+
+.scrollTop:hover {
+    background-color: $primary-hover;
+    color: white;
+}
